@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Comandos Simples</title>  
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css" />
+   </head>
+
+	<body>
+	 
+
+        <h1>2 Implementando consultas SQL simples</h1>
+
+        </p>Para extrairmos e consultarmos dados das tabelas de um banco relacional,
+        usamos a instrução SELECT, que faz uma pesquisa nas estruturas relacionais do
+        banco de dados e retorna valores na forma de linhas e colunas. Uma consulta SQL
+        pode também ser nominada simplesmente como <i>query</i>.</p>
+        
+        
+        <h2>2.1 Construção Básica</h2>
+        
+        <p>SELECT {*|coluna1 [apelido], coluna2 [apelido]}</br>
+        FROM tabela</p>
+        
+        <p>Figura 2.1 – Sintaxe Select</p>
+        
+        
+        Diretrizes:
+         SQL não fazem distinção entre maiúsculas e minúsculas;
+         SQL podem estar em uma ou mais linhas;
+         As palavras reservadas não podem ser abreviadas;
+         Normalmente as clausulas são colocadas em linhas diferentes (boa prática);
+         Guias e identações são usadas para aumentar a legibilidade.
+        <h2>2.2 Colunas</h2>
+        Quanto às colunas temos duas alternativas a primeira é selecionar todas as
+        colunas em uma única consulta SQL, a outra mais elegante é selecionar apenas
+        as colunas interessantes, cada coluna pode ter um alias associado. Alis são muito
+        úteis para cálculos matemáticos.
+        SQL>select *
+        2 from departments
+        3 /
+        DEPARTMENT_ID DEPARTMENT_NAME MANAGER_ID LOCATION_ID
+        ------------- ------------------------------ ---------- -----------
+        10 Administration 200 1700
+        20 Marketing 201 1800
+        SQL>select first_name, salary salario_mensal
+        2 from employees
+        3 /
+        FIRST_NAME SALARIO_MENSAL
+        -------------------- --------------
+        Steven 26400
+        Steven 24000
+        Exemplo 2.1 –Select Colunas
+        _Introdução à Programação PL/SQL ______________________marcuswlima@gmail.com
+        Implementando consultas SQL simples 9
+        <h2>2.3 Expressões Aritméticas (Operadores aritméticos)</h2>
+        É possível criar expressões com colunas do tipo NUMBER e DATE usando
+        operadores aritméticos, na seguinte procedência ( *, /, +, - ).
+        SQL>select first_name, salary , (salary * 20) / 100 porcentagem
+        2 from employees
+        3 /
+        FIRST_NAME SALARY PORCENTAGEM
+        -------------------- ---------- -----------
+        Steven 26400 5280
+        Neena 17000 3400
+        Exemplo 2.2 – Expressões
+        Para adicionarmos 1(um) dia ao valor de um coluna do tipo DATE devemos
+        utilizar o operador + da seguinte forma valor_data+1, e para adicionar uma hora a
+        seguinte sintaxe valor_data+(1/24)
+        SQL>select first_name, hire_date, hire_date+365 data_exame
+        2 from employees
+        3 /
+        FIRST_NAME HIRE_DATE DATA_EXAME
+        -------------------- ----------- -----------
+        Steven 17-JUN-1987 16-JUN-1988
+        Steven 17-JUN-1987 16-JUN-1988
+        Exemplo 2.3 – Expressões Data
+        Obs.: Um valor nulo não é o mesmo que zero ou um espaço em branco. **QUALQUER VALOR
+        OPERACIONADO COM NULO RESULTA NULO**. Este problema é remediado pela função NVL
+        ver(4.5.1)
+        <h2>2.4 Operador de Concatenação</h2>
+        No Oracle o operador || executa contatenação de dois strings de caracteres,
+        e poderá ser usado nas cláusulas SELECT, WHER e ORDER BY. Utilizada na
+        cláusula SELECT de uma consulta SQL, resultará em um campo do tipo caracter.
+        SQL>select first_name||' '||last_name nome_completo
+        2 from employees
+        3 /
+        NOME_COMPLETO
+        ----------------------------------------------
+        Steven King
+        Neena Kochhar
+        Exemplo 2.4 – Concatenação
+    </body>
+
+
+</html>
+
+
+
