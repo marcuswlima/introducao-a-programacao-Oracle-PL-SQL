@@ -10,170 +10,170 @@
   
 	<body>
 
-<h1> Apresentação </h1>
+		<h1> Apresentação </h1>
 
-<p> Este material tem a intenção de mostrar quais são os mínimos
-conhecimentos necessários para a construção dos primeiros objetos escritos em
-linguagem PL/SQL como procedures, functons, packages e triggers.
-Os livros disponíveis no mercado voltados para programação Oracle,
-inclusive a documententação oficial, são abrangentes e neles contém uma grande
-quantidade de informações, que num primeiro momento podem dificultar o
-aprendizado da linguagem PL/SQL. Neste material, sem dúvida, temos apenas o
-essencial para a iniciação na programação PL/SQL, para que esta experiência seja
-rápida e direta.</p>
-<p> O leitor deverá ter conhecimentos fundamentados em lógica de
-programação, e iniciais de banco de dados relacional, tendo em vista que o
-material mostrará como as estruturas de programação são aplicadas à
-programação PL/SQL quanto a sintaxe.</p>
+		<p> Este material tem a intenção de mostrar quais são os mínimos
+		conhecimentos necessários para a construção dos primeiros objetos escritos em
+		linguagem PL/SQL como procedures, functons, packages e triggers.
+		Os livros disponíveis no mercado voltados para programação Oracle,
+		inclusive a documententação oficial, são abrangentes e neles contém uma grande
+		quantidade de informações, que num primeiro momento podem dificultar o
+		aprendizado da linguagem PL/SQL. Neste material, sem dúvida, temos apenas o
+		essencial para a iniciação na programação PL/SQL, para que esta experiência seja
+		rápida e direta.</p>
+		<p> O leitor deverá ter conhecimentos fundamentados em lógica de
+		programação, e iniciais de banco de dados relacional, tendo em vista que o
+		material mostrará como as estruturas de programação são aplicadas à
+		programação PL/SQL quanto a sintaxe.</p>
 
-<p> O material foi concebido à luz de vários anos de experiência atuando em
-desenvolvimento para Oracle e apresenta as informações em uma seqüência
-pensada adequada para o objetivo do material. Faz parte também do material um
-arquivo simples de texto com todos os exemplos listados na apostila para evitar
-redigitação dos mesmos.</p>
+		<p> O material foi concebido à luz de vários anos de experiência atuando em
+		desenvolvimento para Oracle e apresenta as informações em uma seqüência
+		pensada adequada para o objetivo do material. Faz parte também do material um
+		arquivo simples de texto com todos os exemplos listados na apostila para evitar
+		redigitação dos mesmos.</p>
 
-<h2>Organização Trabalho</h2>
-<h3>Parte I</h3>
+		<h2>Organização Trabalho</h2>
+		<h3>Parte I</h3>
 
-<p> Abordaremos a construção das primeiras instruções SQL, manipulando os
-dados obtidos através de funções de linhas e funções de grupo. Consultas
-complexas com várias tabelas serão abordadas, assim como subqueries,
-manipulação de dados (insert, update, delete) e controle de transação.</p>
+		<p> Abordaremos a construção das primeiras instruções SQL, manipulando os
+		dados obtidos através de funções de linhas e funções de grupo. Consultas
+		complexas com várias tabelas serão abordadas, assim como subqueries,
+		manipulação de dados (insert, update, delete) e controle de transação.</p>
 
-<h3>Parte II</h3>
+		<h3>Parte II</h3>
 
-Iniciaremos a programação, e será apresentado como as estruturas de
-programação se comportam no PL/SQL, como se dá a manipulação dos famosos
-cursores PL/SQL e finalizando com tratamento de erros. Todas essas atividades
-se darão em blocos PL/SQL anônimos que são a unidade básica da programação
-PL/SQL.
-<h3>Parte III</h3>
-Continuando a programação, abordaremos a criação e compilação dos
-principais objetos procedurais (procedures, function, package, triggers), conhecer
-as suas especificidades e suas finalidades.
-<h3>Parte IV	</h3>
-Como apêndice, porém não menos importante, serão mostrados os conceitos
-para uma correta configuração de um software Oracle Client.
-<h2>Autor</h2>
-Marcus William, Tecnólogo em Processamento de Dados, com mais de 10
-anos na área de TI, convive há mais de sete anos com produtos Oracle, autodidata
-no aprendizado da programação PL/SQL, foi coordenador dos programadores
-PL/SQL em 2000 no DETRAN-PA e atualmente chefia da Divisão de Banco de
-Dados do TJE-PA.
-
-
-
-<h2>Perfil Programador PL/SQL</h2>
-<p>O programador PL/SQL é o profissional da área de TI especializado em
-criar e manter as construções procedurais de um SGDB ORACLE, estes escritos
-em linguagem PL/SQL. O PL/SQL não é um produto separado, é sim uma
-tecnologia integrada ao SGDB Oracle e está disponível desda versão 6.</p>
-<p>Uma das principais finalidades da linguagem PL/SQL é a construção de
-Stored Procedures, que são unidades de manipulação de dados com scopo
-definido de ações, e estarão disponíveis aos usuários do SGDB segundo uma
-política de acesso e privilégios customizada. A principal finalidade das Stored
-Procedures é prover procedimentos armazenados no SGDB de fácil utilização,
-aliviando assim, a carga de processamento no cliente. Os principais tipos de
-Stored Procedure se dão na forma de procedure, function e package.</p>
-
-<p>Para se criar ou compilar um objeto no Oracle, o programador deverá
-submeter ao banco o comando de criação deste objeto, comando este que conterá
-todos os atributos e inclusive a lógica prevista para o objeto. Se o programador
-tem o privilégio de criar os seus objetos, ele o fará, caso contrário essa tarefa é
-responsabilidade do DBA (DataBase Administrator). Uma forma de facilitar este
-trabalho é registrar o comando de criação em scripts para fácil recriação quando
-necessário.</p>
-<p>É comum escutar “Vamos alterar a procedure”. A rigor um objeto procedural
-não é alterado e sim recriado ou recompilado. Se a “alteração” consiste em apenas
-na adição de uma linha, então todo o comando de compilação, adicionado da nova
-linha, deverá ser reapreciado/compilado pelo Oracle.</p>
-<p>Existem alguns excelentes aplicativos IDE (Integrated Development
-Environment) que auxiliam a gerência dos scripts de construção de objetos
-procedurais.</p>
+		Iniciaremos a programação, e será apresentado como as estruturas de
+		programação se comportam no PL/SQL, como se dá a manipulação dos famosos
+		cursores PL/SQL e finalizando com tratamento de erros. Todas essas atividades
+		se darão em blocos PL/SQL anônimos que são a unidade básica da programação
+		PL/SQL.
+		<h3>Parte III</h3>
+		Continuando a programação, abordaremos a criação e compilação dos
+		principais objetos procedurais (procedures, function, package, triggers), conhecer
+		as suas especificidades e suas finalidades.
+		<h3>Parte IV	</h3>
+		Como apêndice, porém não menos importante, serão mostrados os conceitos
+		para uma correta configuração de um software Oracle Client.
+		<h2>Autor</h2>
+		Marcus William, Tecnólogo em Processamento de Dados, com mais de 10
+		anos na área de TI, convive há mais de sete anos com produtos Oracle, autodidata
+		no aprendizado da programação PL/SQL, foi coordenador dos programadores
+		PL/SQL em 2000 no DETRAN-PA e atualmente chefia da Divisão de Banco de
+		Dados do TJE-PA.
 
 
-<table style="width:50%" border="1">
-	<tr>
-	  <th>Produto</th>
-	  <th>Fabricante</th>
-	  <th>URL</th>
-	</tr>
-	<tr>
-	  <td>PL/SQL Developer</td>
-	  <td>Allroundautomations</td>
-	  <td><a href="www.allroundautomations.com/plsqldev.html">www.allroundautomations.com/plsqldev.html</a></td>
-	</tr>
-	<tr>
-	  <td>SQL Developer</td>
-	  <td>Oracle</td>
-	  <td><a href="www.oracle.com/technology/products/database/sql_developer/index.html">www.oracle.com/technology/products/database/sql_developer/index.html</a></td>
-	</tr>
-	<tr>
-		<td>SQL Navigator</td>
-		<td>Quest</td>
-		<td><a href="www.quest.com/sql_navigator">www.quest.com/sql_navigator</a></td>
-	</tr>
-	</table>
 
-	<p><i>Obs.:O programa PL/SQL Developer já foi a prefrência do autor, com o passar do tempo entendeu por bem passar a utilizar o Oracle SQL Developer..</i></p>
+		<h2>Perfil Programador PL/SQL</h2>
+		<p>O programador PL/SQL é o profissional da área de TI especializado em
+		criar e manter as construções procedurais de um SGDB ORACLE, estes escritos
+		em linguagem PL/SQL. O PL/SQL não é um produto separado, é sim uma
+		tecnologia integrada ao SGDB Oracle e está disponível desda versão 6.</p>
+		<p>Uma das principais finalidades da linguagem PL/SQL é a construção de
+		Stored Procedures, que são unidades de manipulação de dados com scopo
+		definido de ações, e estarão disponíveis aos usuários do SGDB segundo uma
+		política de acesso e privilégios customizada. A principal finalidade das Stored
+		Procedures é prover procedimentos armazenados no SGDB de fácil utilização,
+		aliviando assim, a carga de processamento no cliente. Os principais tipos de
+		Stored Procedure se dão na forma de procedure, function e package.</p>
 
-
-<h2>Arquitetura Banco de Dados Oracle</h2>
-
-<p>É necessário para o programador PL/SQL entender a estrutura de
-armazenamento de objetos disponíveis no Oracle a fim de executar suas
-atividades.</p>
-<p>Vamos começar a entender a diferença entre Banco de Dados e
-Instância. Em um SGDB Oracle, a rigor, o termo Banco de Dados se aplica aos
-arquivos físicos que integram o mesmo. Assim sendo, em uma conversa com o
-suporte Oracle o atendente entenderá “banco de dados” como os arquivos
-formadores do Oracle.</p>
-<p>Instância é o conjunto de processos de memória armazenados em forma
-volátil, que são responsáveis pela gerência de todas as atividades incidente e
-consequente no banco de dados (arquivos físicos). Quando um usuário cria uma
-conexão no banco, na realidade ele está se conectando a uma instância, que lhe
-servirá de ponte de trabalho ao banco de dados.</p>
-<p>O schema é uma representação lógica organizacional que aglutina uma
-porção de objetos do banco de dados. Quando criamos um usuário estamos
-também criando um schema inicialmente vazio. Em geral, é convencionado que
-um ou mais schemas contemplem os objetos de produção de um determinado
-sistema e que os demais usuários criados sejam utilizados apenas para fins de
-conexão e uso dos objetos dos schemas de produção. Para que isso aconteça,
-uma política de privilégios deverá ser implementada.</p>
-
-<img src="imagens/Fig01.png" alt="Fig01 - Instância Oracle" width="700" height="300">
-
-<p>Fig01 - Instância Oracle</p>
-
-<p>Toda essa arquitetura é de responsabilidade do Administrador de Banco de
-Dados - DBA. E no dia-a-dia, estas definições se confundem. Não é difícil
-encontrar alguém usando o termo banco de dados para uma instância ou um
-schema. Isso não é um pecado. O que se deve ter em mente é a real diferença
-entre estes conceitos.</p>
-<p>Um programador PL/SQL deverá receber as seguintes informações do DBA
-para dar início às suas atividades:</p>
-
-<ul>
-<li>host ou endereço IP servidor de banco de dados;</li>	
-<li>usuário de banco de dados;</li>
-<li>senha de acesso;</li>
-<li>identificação do serviço ou nome do banco de dados.</li>
-	
-	
-	
-	
-</ul>
-
-<p>Com estas informações, o programador deverá saber configurar o software
-Oracle Client instalado na sua estação de trabalho a fim de acessar o banco de
-dados informado pelo DBA. O usuário de banco de dados informado deverá ter
-privilégios de compilação e recompilação de objetos procedurais seguindo a
-politica de privilégios imposta ao banco de dados. É boa prática, o DBA informar
-um banco de desenvolvimento ao invéz de um banco de produção.</p>
+		<p>Para se criar ou compilar um objeto no Oracle, o programador deverá
+		submeter ao banco o comando de criação deste objeto, comando este que conterá
+		todos os atributos e inclusive a lógica prevista para o objeto. Se o programador
+		tem o privilégio de criar os seus objetos, ele o fará, caso contrário essa tarefa é
+		responsabilidade do DBA (DataBase Administrator). Uma forma de facilitar este
+		trabalho é registrar o comando de criação em scripts para fácil recriação quando
+		necessário.</p>
+		<p>É comum escutar “Vamos alterar a procedure”. A rigor um objeto procedural
+		não é alterado e sim recriado ou recompilado. Se a “alteração” consiste em apenas
+		na adição de uma linha, então todo o comando de compilação, adicionado da nova
+		linha, deverá ser reapreciado/compilado pelo Oracle.</p>
+		<p>Existem alguns excelentes aplicativos IDE (Integrated Development
+		Environment) que auxiliam a gerência dos scripts de construção de objetos
+		procedurais.</p>
 
 
-<i>Obs:. No apêndice A são apresentados os aspectos mais profundos quanto à configuração de</i>
-clientes Oracle.
+		<table style="width:50%" border="1">
+			<tr>
+			<th>Produto</th>
+			<th>Fabricante</th>
+			<th>URL</th>
+			</tr>
+			<tr>
+			<td>PL/SQL Developer</td>
+			<td>Allroundautomations</td>
+			<td><a href="www.allroundautomations.com/plsqldev.html">www.allroundautomations.com/plsqldev.html</a></td>
+			</tr>
+			<tr>
+			<td>SQL Developer</td>
+			<td>Oracle</td>
+			<td><a href="www.oracle.com/technology/products/database/sql_developer/index.html">www.oracle.com/technology/products/database/sql_developer/index.html</a></td>
+			</tr>
+			<tr>
+				<td>SQL Navigator</td>
+				<td>Quest</td>
+				<td><a href="www.quest.com/sql_navigator">www.quest.com/sql_navigator</a></td>
+			</tr>
+			</table>
+
+			<p><i>Obs.:O programa PL/SQL Developer já foi a prefrência do autor, com o passar do tempo entendeu por bem passar a utilizar o Oracle SQL Developer..</i></p>
+
+
+		<h2>Arquitetura Banco de Dados Oracle</h2>
+
+		<p>É necessário para o programador PL/SQL entender a estrutura de
+		armazenamento de objetos disponíveis no Oracle a fim de executar suas
+		atividades.</p>
+		<p>Vamos começar a entender a diferença entre Banco de Dados e
+		Instância. Em um SGDB Oracle, a rigor, o termo Banco de Dados se aplica aos
+		arquivos físicos que integram o mesmo. Assim sendo, em uma conversa com o
+		suporte Oracle o atendente entenderá “banco de dados” como os arquivos
+		formadores do Oracle.</p>
+		<p>Instância é o conjunto de processos de memória armazenados em forma
+		volátil, que são responsáveis pela gerência de todas as atividades incidente e
+		consequente no banco de dados (arquivos físicos). Quando um usuário cria uma
+		conexão no banco, na realidade ele está se conectando a uma instância, que lhe
+		servirá de ponte de trabalho ao banco de dados.</p>
+		<p>O schema é uma representação lógica organizacional que aglutina uma
+		porção de objetos do banco de dados. Quando criamos um usuário estamos
+		também criando um schema inicialmente vazio. Em geral, é convencionado que
+		um ou mais schemas contemplem os objetos de produção de um determinado
+		sistema e que os demais usuários criados sejam utilizados apenas para fins de
+		conexão e uso dos objetos dos schemas de produção. Para que isso aconteça,
+		uma política de privilégios deverá ser implementada.</p>
+
+		<img src="imagens/Fig01.png" alt="Fig01 - Instância Oracle" width="700" height="300">
+
+		<p>Fig01 - Instância Oracle</p>
+
+		<p>Toda essa arquitetura é de responsabilidade do Administrador de Banco de
+		Dados - DBA. E no dia-a-dia, estas definições se confundem. Não é difícil
+		encontrar alguém usando o termo banco de dados para uma instância ou um
+		schema. Isso não é um pecado. O que se deve ter em mente é a real diferença
+		entre estes conceitos.</p>
+		<p>Um programador PL/SQL deverá receber as seguintes informações do DBA
+		para dar início às suas atividades:</p>
+
+		<ul>
+		<li>host ou endereço IP servidor de banco de dados;</li>	
+		<li>usuário de banco de dados;</li>
+		<li>senha de acesso;</li>
+		<li>identificação do serviço ou nome do banco de dados.</li>
+			
+			
+			
+			
+		</ul>
+
+		<p>Com estas informações, o programador deverá saber configurar o software
+		Oracle Client instalado na sua estação de trabalho a fim de acessar o banco de
+		dados informado pelo DBA. O usuário de banco de dados informado deverá ter
+		privilégios de compilação e recompilação de objetos procedurais seguindo a
+		politica de privilégios imposta ao banco de dados. É boa prática, o DBA informar
+		um banco de desenvolvimento ao invéz de um banco de produção.</p>
+
+
+		<i>Obs:. No apêndice A são apresentados os aspectos mais profundos quanto à configuração de</i>
+		clientes Oracle.
    </body>
 
 
