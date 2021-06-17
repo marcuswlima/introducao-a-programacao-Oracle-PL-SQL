@@ -4,18 +4,8 @@ a{
 	font-size: 18px;
 }
 
-h1{
-	font-family: helvetica; sans-serif;
-	}
 
-#segundo{
-	color:orange; 
-}
-
-a.link {
-	color:green; 
-}
-
-#codigo{
-	color:orange; 
-}
+p {
+	font-family: verdana;
+	font-size: 30px;
+  }
