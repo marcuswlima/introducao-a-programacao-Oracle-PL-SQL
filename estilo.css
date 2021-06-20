@@ -4,8 +4,12 @@ a{
 	font-size: 18px;
 }
 
-
-p {
-	font-family: verdana;
-	font-size: 30px;
+#codigo {
+	background-color: grey;
+	font-family: "Courier New";
   }
+
+#t01 {
+	width: 100%;
+	background-color: #f1f1c1;
+  }  

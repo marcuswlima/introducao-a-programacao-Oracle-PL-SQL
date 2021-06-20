@@ -20,9 +20,13 @@
         
         <h2>2.1 Construção Básica</h2>
         
-        <p>SELECT {*|coluna1 [apelido], coluna2 [apelido]}</br>
-        FROM tabela</p>
         
+        <p id="codigo">
+        </br>    
+        SELECT {*|coluna1 [apelido], coluna2 [apelido]} </br>
+                FROM tabela </br>    
+        </br>    
+        </p>
         <p>Figura 2.1 – Sintaxe Select</p>
         
         
@@ -35,64 +39,95 @@
             <li> Guias e identações são usadas para aumentar a legibilidade.</li>
         </ul>
         <h2>2.2 Colunas</h2>
-        Quanto às colunas, temos duas alternativas, a primeira é selecionar todas as
+        <p>Quanto às colunas, temos duas alternativas, a primeira é selecionar todas as
         colunas em uma única consulta SQL, a outra mais elegante é selecionar apenas
         as colunas interessantes, cada coluna pode ter um alias associado. Alias são muito
-        úteis para cálculos matemáticos.
-        SQL>select *
-        2 from departments
-        3 /
-        DEPARTMENT_ID DEPARTMENT_NAME MANAGER_ID LOCATION_ID
-        ------------- ------------------------------ ---------- -----------
-        10 Administration 200 1700
-        20 Marketing 201 1800
-        SQL>select first_name, salary salario_mensal
-        2 from employees
-        3 /
-        FIRST_NAME SALARIO_MENSAL
-        -------------------- --------------
-        Steven 26400
-        Steven 24000
+        úteis para cálculos matemáticos.</p>
+
+        <p id="codigo">
+        </br>    
+        SQL>select *   </br>
+        2 from departments  </br>
+        3 /  </br>
+        DEPARTMENT_ID DEPARTMENT_NAME MANAGER_ID LOCATION_ID  </br>
+        ------------- ------------------------------ ---------- -----------  </br>
+        10               Administration 200 1700 </br>
+        20 Marketing 201 1800 </br>  </br> 
+        SQL>select first_name, salary salario_mensal </br>
+        2 from employees </br>
+        3 / </br>
+        FIRST_NAME SALARIO_MENSAL </br>
+        -------------------- -------------- </br>
+        Steven 26400 </br>
+        Steven 24000 </br>
+        </br>    
+        </p>
+
         Exemplo 2.1 –Select Colunas
 
         <h2>2.3 Expressões Aritméticas (Operadores aritméticos)</h2>
+        
+        <p>
         É possível criar expressões com colunas do tipo NUMBER e DATE usando
-        operadores aritméticos, na seguinte procedência ( *, /, +, - ).
-        SQL>select first_name, salary , (salary * 20) / 100 porcentagem
-        2 from employees
-        3 /
-        FIRST_NAME SALARY PORCENTAGEM
-        -------------------- ---------- -----------
-        Steven 26400 5280
-        Neena 17000 3400
+        operadores aritméticos, na seguinte procedência ( *, /, +, - ). 
+        </p>
+        
+        <p id="codigo">
+        </br>    
+        SQL>select first_name, salary , (salary * 20) / 100 porcentagem </br>
+        2 from employees </br>
+        3 / </br>
+        FIRST_NAME SALARY PORCENTAGEM </br>
+        -------------------- ---------- ----------- </br>
+        Steven 26400 5280 </br>
+        Neena 17000 3400 </br>
+        </br>    
+        </p>
         Exemplo 2.2 – Expressões
+        <p>
         Para adicionarmos 1(um) dia ao valor de um coluna do tipo DATE devemos
         utilizar o operador + da seguinte forma valor_data+1, e para adicionar uma hora a
         seguinte sintaxe valor_data+(1/24)
-        SQL>select first_name, hire_date, hire_date+365 data_exame
-        2 from employees
-        3 /
-        FIRST_NAME HIRE_DATE DATA_EXAME
-        -------------------- ----------- -----------
-        Steven 17-JUN-1987 16-JUN-1988
-        Steven 17-JUN-1987 16-JUN-1988
-        Exemplo 2.3 – Expressões Data
-        Obs.: Um valor nulo não é o mesmo que zero ou um espaço em branco. **QUALQUER VALOR
-        OPERACIONADO COM NULO RESULTA NULO**. Este problema é remediado pela função NVL
-        ver(4.5.1)
+        </p>
+
+        <p id="codigo">
+        </br>    
+        SQL>select first_name, hire_date, hire_date+365 data_exame </br>
+        2 from employees </br>
+        3 / </br>
+        FIRST_NAME HIRE_DATE DATA_EXAME </br>
+        -------------------- ----------- ----------- </br>
+        Steven 17-JUN-1987 16-JUN-1988 </br>
+        Steven 17-JUN-1987 16-JUN-1988 </br>
+        </br>    
+        </p>
+        Exemplo 2.3 – Expressões Data</br>
+        
+        <i>Obs.: Um valor nulo não é o mesmo que zero ou um espaço em branco. <strong>QUALQUER VALOR
+            OPERACIONADO COM NULO RESULTA NULO</strong>>. Este problema é remediado pela função NVL
+        ver (4.5.1) </i>
 
         <h2>2.4 Operador de Concatenação</h2>
+
+        <p>
         No Oracle o operador || executa contatenação de dois strings de caracteres,
-        e poderá ser usado nas cláusulas SELECT, WHER e ORDER BY. Utilizada na
+        e poderá ser usado nas cláusulas SELECT, WHERE e ORDER BY. Utilizada na
         cláusula SELECT de uma consulta SQL, resultará em um campo do tipo caracter.
-        SQL>select first_name||' '||last_name nome_completo
-        2 from employees
-        3 /
-        NOME_COMPLETO
-        ----------------------------------------------
-        Steven King
-        Neena Kochhar
+        </p> 
+
+        <p id="codigo">
+        </br>    
+        SQL>select first_name||' '||last_name nome_completo </br>
+        2 from employees </br>
+        3 / </br>
+        NOME_COMPLETO </br>
+        ---------------------------------------------- </br>
+        Steven King </br>
+        Neena Kochhar </br>
+        </br>    
+        </p>
         Exemplo 2.4 – Concatenação
+
     </body>
 
 
